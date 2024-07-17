@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.__main {
+    background-image: linear-gradient(to right, hotpink, hsl(30deg 100% 1% / 20%)), url(./assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    min-height: 100vh;
+
+
+    .header_content {
+        position: absolute;
+        padding: 20px 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        top: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .result {
+        .model_item {
+            height: 300px;
+
+            .fade-in {
+                opacity: 1;
+            }
+
+            .model_img {
+                background-image: url(./assets/model.jpg);
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: top center;
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+                img {
+                    width: 60%;
+                    position: absolute;
+                    left: 45px;
+                    top: 77px;
+                    opacity: 0.5;
+                }
+
+                .info_glass {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 10px;
+                    background-color: rgba(255, 199, 238, 0.3);
+                    min-width: 100%;
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    h2 {
+                        color: #49724e;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+
+        .detail_glass {
+            div {
+                transition: all .5s;
+
+                &:hover {
+
+                    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+                }
+            }
+
+            button {
+                transition: all .5s;
+                position: relative;
+
+                #bow {
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    transform: rotate(40deg);
+                    opacity: 0;
+                    transition: all 2s;
+                }
+
+                &:hover {
+                    border-radius: 100%;
+                    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                    background-image: linear-gradient(to right, #ff94b2, #7d77ff);
+
+                    #bow {
+                        opacity: 1;
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+}
