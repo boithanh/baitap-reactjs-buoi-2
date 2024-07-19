@@ -5,8 +5,8 @@ const arrGlass = [
     {
         "id": 1,
         "price": 30,
-        "wear": "/public/glassesImage/v1.png",
-        "unwear": "/public/glassesImage/g1.jpg",
+        "wear": "/glassesImage/v1.png",
+        "unwear": "/glassesImage/g1.jpg",
         "name": "GUCCI G8850U",
         "desc": "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
         "select": "v1.png"
@@ -14,8 +14,8 @@ const arrGlass = [
     {
         "id": 2,
         "price": 50,
-        "wear": "/public/glassesImage/v2.png",
-        "unwear": "/public/glassesImage/g2.jpg",
+        "wear": "/glassesImage/v2.png",
+        "unwear": "/glassesImage/g2.jpg",
         "name": "GUCCI G8759H",
         "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi eligendi doloribus",
         "select": "v2.png"
@@ -23,8 +23,8 @@ const arrGlass = [
     {
         "id": 3,
         "price": 30,
-        "wear": "/public/glassesImage/v3.png",
-        "unwear": "/public/glassesImage/g3.jpg",
+        "wear": "/glassesImage/v3.png",
+        "unwear": "/glassesImage/g3.jpg",
         "name": "DIOR D6700HQ",
         "desc": "ut et labore doloremque maxime voluptatem soluta explicabo pariatur rerum tenetur deserunt ",
         "select": "v3.png"
@@ -32,8 +32,8 @@ const arrGlass = [
     {
         "id": 4,
         "price": 70,
-        "wear": "/public/glassesImage/v4.png",
-        "unwear": "/public/glassesImage/g4.jpg",
+        "wear": "/glassesImage/v4.png",
+        "unwear": "/glassesImage/g4.jpg",
         "name": "DIOR D6005U",
         "desc": "going through the cites of the word",
         "select": "v4.png"
@@ -41,8 +41,8 @@ const arrGlass = [
     {
         "id": 5,
         "price": 40,
-        "wear": "/public/glassesImage/v5.png",
-        "unwear": "/public/glassesImage/g5.jpg",
+        "wear": "/glassesImage/v5.png",
+        "unwear": "/glassesImage/g5.jpg",
         "name": "PRADA P8750",
         "desc": "anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Intern ",
         "select": "v5.png"
@@ -50,8 +50,8 @@ const arrGlass = [
     {
         "id": 6,
         "price": 60,
-        "wear": "/public/glassesImage/v6.png",
-        "unwear": "/public/glassesImage/g6.jpg",
+        "wear": "/glassesImage/v6.png",
+        "unwear": "/glassesImage/g6.jpg",
         "name": "PRADA P9700",
         "desc": "first true generator on the Internet. It uses a dictionary of over 200",
         "select": "v6.png"
@@ -59,8 +59,8 @@ const arrGlass = [
     {
         "id": 7,
         "price": 80,
-        "wear": "/public/glassesImage/v7.png",
-        "unwear": "/public/glassesImage/g7.jpg",
+        "wear": "/glassesImage/v7.png",
+        "unwear": "/glassesImage/g7.jpg",
         "name": "FENDI F8750",
         "desc": "ipsum dolor sit amet.., comes from a line in section 1.10.32.",
         "select": "v7.png"
@@ -68,8 +68,8 @@ const arrGlass = [
     {
         "id": 8,
         "price": 100,
-        "wear": "/public/glassesImage/v8.png",
-        "unwear": "/public/glassesImage/g8.jpg",
+        "wear": "/glassesImage/v8.png",
+        "unwear": "/glassesImage/g8.jpg",
         "name": "FENDI F8500",
         "desc": "passage, and going through the cites of the word in classical ",
         "select": "v8.png"
@@ -77,8 +77,8 @@ const arrGlass = [
     {
         "id": 9,
         "price": 60,
-        "wear": "/public/glassesImage/v9.png",
-        "unwear": "/public/glassesImage/g9.jpg",
+        "wear": "/glassesImage/v9.png",
+        "unwear": "/glassesImage/g9.jpg",
         "name": "FENDI F4300",
         "desc": "making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of ",
         "select": "v9.png"
@@ -86,8 +86,8 @@ const arrGlass = [
     {
         "id": 10,
         "price": 999,
-        "wear": "/public/glassesImage/v5.png",
-        "unwear": "/public/glassesImage/g3.jpg",
+        "wear": "/glassesImage/v5.png",
+        "unwear": "/glassesImage/g3.jpg",
         "name": "PRADA P8999",
         "desc": "versions from the 1914 translation by H. Rackham.",
         "select": "v5.png"
@@ -105,7 +105,7 @@ const BodyComponent = () => {
                 <div className="container">
                     <div className="w-6/12 model_item grid grid-cols-2 grid-rows-1 gap-48 mx-auto">
                         <div className='model_img rounded-xl'>
-                            <img src={`/public/glassesImage/${chooseGlass}`} alt="" />
+                            <img src={`/glassesImage/${chooseGlass}`} alt="" />
                             <div className='info_glass rounded-xl'>
                                 <h2>{name}</h2>
                                 <h3>{price && "Price " + price + " $"}</h3>
